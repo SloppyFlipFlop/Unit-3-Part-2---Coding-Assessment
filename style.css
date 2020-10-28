@@ -57,172 +57,284 @@ Base styles used by All Screens DO NOT EDIT ABOVE
 
 /* HTML and Body Styles */
 
+html {
+    background-color: var(--Html-background);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background: white;
+    max-width: 1024px;
+    margin: auto;
+    box-shadow: var(--Shadow) 10px 10px 25px, var(--Shadow) -10px 10px 25px;
+}
+
+header body {
+    background: white;
+    width: 100%;
+}
+
+image #logoimage {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 15px;
+}
+.top ul li {
+    margin: 10px;
+}
+
+.top ul li a {
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.top ul li a:hover {
+    color: var(--Nav-active);
+    text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+}
+
+article p:nth-child(2) {
+    float: right;
+    width: 45%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    transform : rotate(30deg) translateY(30px);
+    box-shadow: var(--Shadow) 10px -10px 30px;
+}
+
+section .spotlight {
+    background-color: var(--Spotlight);
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+section h1 .spotlight {
+    font-size: 2.5rem;
+    color: var(--Text-color);
+    box-shadow: white -2px 0px 1px, white -5px 0px 30px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: right;
+}
+
+.spotlight img {
+    width: 35%;
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.spotlight p {
+    margin-bottom: none;
+}
+
+aside {
+    background-color: var(--Text-background);
+}
+
+aside a {
+    color: var(--Nav-Active);
+}
+
+aside h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    justify-content: 0.4rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+aside img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+dl {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+}
+
+dl dd {
+    margin-bottom: 20px;
+}
+
+nav #bottom {
+    background-color: var(--Nav-Active);
+    color: var(--Text-Color);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#bottom ul li {
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+#bottom ul a {
+    color: white;
+}
+
+footer p {
+    color: var(--Text-Color);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    margin: none;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#bottom ul {
+    flex-shrink: inherit;
+    flex-grow: 0;
+    max-width: 150px;
+}
+
 @media (max-width: 480px) {
-    html {
-        background-color: var(--Html-background);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 12px;
-    }
-    
     body {
-        background: white;
-        max-width: 1024px;
-        margin: auto;
-        box-shadow: var(--Shadow) 10px 10px 25px, var(--Shadow) -10px 10px 25px;
+        background-color: var(--Shadow);
+        color: var(--Text-Background);
     }
-    
-    header body {
-        background: white;
-        width: 100%;
+
+    aside{
+        display: none;
     }
-    
-    image #logoimage {
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+
+    article img {
+        display: none;
     }
-    
-    p {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        margin: 15px;
-    }
-    .top ul li {
-        margin: 10px;
-    }
-    
-    .top ul li a {
-        color: white;
-        display: block;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    
-    .top ul li a:hover {
-        color: var(--Nav-active);
-        text-shadow: 0px 0px 2px black, 0px 0px 15px white;
-    }
-    
-    article p:nth-child(2) {
-        float: right;
-        width: 45%;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 120px;
-        margin-left: 50px;
-        transform : rotate(30deg) translateY(30px);
-        box-shadow: var(--Shadow) 10px -10px 30px;
-    }
-    
-    section .spotlight {
-        background-color: var(--Spotlight);
-        padding-bottom: 15px;
-        overflow: auto;
-    }
-    
-    section h1 .spotlight {
-        font-size: 2.5rem;
-        color: var(--Text-color);
-        box-shadow: white -2px 0px 1px, white -5px 0px 30px;
-        padding-top: 20px;
-        padding-right: 15px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        text-align: right;
-    }
-    
-    .spotlight img {
-        width: 35%;
-        float: left;
-        display: block;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        margin-left: 15px;
-    }
-    
-    .spotlight p {
-        margin-bottom: none;
-    }
-    
-    aside {
-        background-color: var(--Text-background);
-    }
-    
-    aside a {
-        color: var(--Nav-Active);
-    }
-    
-    aside h1 {
-        font-size: 2rem;
-        font-weight: normal;
-        justify-content: 0.4rem;
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 0px;
-        margin-bottom: 25px;
-        margin-left: 0px;
-    }
-    
-    aside img {
-        display: block;
-        width: 30%;
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    dl {
-        text-align: center;
-    }
-    
-    footer {
-        width: 100%;
-    }
-    
-    dl dd {
-        margin-bottom: 20px;
-    }
-    
-    nav #bottom {
-        background-color: var(--Nav-Active);
-        color: var(--Text-Color);
-        padding: 15px;
-        display: flex;
+
+    .top ul {
+        display: flexbox;
+        flex-wrap: wrap;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
     }
-    
-    #bottom ul li {
-        font-size: 1rem;
-        line-height: 1.8rem;
+
+    .top ul li {
+        font-size: 2.2rem;
+        flex: 130px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
-    
-    #bottom ul a {
-        color: white;
+
+    .top ul li a {
+        padding: 50% 0% 50% 0%;
     }
-    
-    footer p {
-        color: var(--Text-Color);
-        font-size: 0.9rem;
+
+    nav.top ul li:nth-of-type(1) {
+        background-image: url(`images/cw_image01.png`);
         text-align: center;
-        background-color: black;
-        margin: none;
-        padding-top: 10px;
-        padding-right: 0px;
-        padding-bottom: 10px;
-        padding-left: 10px;
+
     }
-    
-    #bottom ul {
-        flex-shrink: inherit;
+
+    nav.top ul li:nth-of-type(2) {
+        background-image: url(`images/cw_image02.png`);
+        background-image: center;
+    }
+
+    nav.top ul li:nth-of-type(3) {
+        background-image: url(`images/cw_image03.png`);
+    }
+
+    nav.top ul li:nth-of-type(4) {
+        background-image: url(`images/cw_image04.png`);
+    }
+
+    nav.top ul li:nth-of-type(5) {
+        background-image: url(`images/cw_image05.png`);
+    }
+
+    nav.top ul li:nth-of-type(6) {
+        background-image: url(`images/cw_image06.png`);
+    }
+
+    p #links {
+        display: flexbox;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p #links a {
+        background-color: var(--nav-Active);
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 481px) {
+    body {
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    article {
+        flex: 400px;
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+
+    aside{
+        flex: 200px;
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    .top ul {
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: var(--Shadow);
+        height: 50px;
+        margin: auto auto auto auto;
+        
+    }
+
+    .top ul li {
+        flex: 80px;
         flex-grow: 0;
-        max-width: 150px;
+        flex-shrink: 1;
+    }
+
+    #links p {
+        display: none;
     }
 }
