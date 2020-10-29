@@ -89,7 +89,7 @@ p {
     margin: 15px 15px 15px 15px;
 }
 
-.top ul li {
+nav.top ul li {
     margin: 10px 10px 10px 10px;
 }
 
@@ -241,51 +241,91 @@ nav #bottom ul {
     }
 
     article img {
-        display: none;
+        visibility: hidden;
     }
 
-    .top ul {
+    section.spotlight {
+        visibility: hidden;
+    }
+
+    nav.top ul {
         display: flexbox;
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .top ul li {
+    nav.top ul li {
         font-size: 2.2rem;
         flex: 130px;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
-    .top ul li a {
-        padding: 50% 0% 50% 0%;
+    nav.top ul li a {
+        padding-top: 50%;
+        padding-right: 0%;
+        padding-bottom: 50%;
+        padding-left: 0%;
     }
 
     nav.top ul li:nth-of-type(1) {
         background-image: url(`images/cw_image01.png`);
-        text-align: center;
-
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     nav.top ul li:nth-of-type(2) {
         background-image: url(`images/cw_image02.png`);
-        background-image: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     nav.top ul li:nth-of-type(3) {
         background-image: url(`images/cw_image03.png`);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     nav.top ul li:nth-of-type(4) {
         background-image: url(`images/cw_image04.png`);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     nav.top ul li:nth-of-type(5) {
         background-image: url(`images/cw_image05.png`);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     nav.top ul li:nth-of-type(6) {
         background-image: url(`images/cw_image06.png`);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
     }
 
     p #links {
@@ -299,7 +339,10 @@ nav #bottom ul {
         background-color: var(--nav-Active);
         color: white;
         text-decoration: none;
-        padding: 10px 10px 10px 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
         border-radius: 20px;
     }
 }
@@ -323,7 +366,7 @@ nav #bottom ul {
         flex-shrink: 2;
     }
 
-    .top ul {
+    nav.top ul {
         display: flexbox;
         flex-wrap: wrap;
         flex-direction: row;
@@ -333,13 +376,13 @@ nav #bottom ul {
         
     }
 
-    .top ul li {
+    nav.top ul li {
         flex: 80px;
         flex-grow: 0;
         flex-shrink: 1;
     }
 
-    #links p {
+    p #links {
         display: none;
     }
 }
