@@ -5,12 +5,12 @@ Base styles used by All Screens DO NOT EDIT BELOW
 
 
 :root {
-    --Html-Background: (246, 177, 177)
-    --Shadow: (51, 51, 51)
-    --Nav-Active: (220, 27, 27)
-    --Spotlight: (171, 171, 171)
-    --Text-Background: (211, 211, 211)
-    --Text-Color: (111, 111, 111)
+    --Html-Background: rgb(246, 177, 177);
+    --Shadow: rgb(51, 51, 51);
+    --Nav-Active: rgb(220, 27, 27);
+    --Spotlight: rgb(171, 171, 171);
+    --Text-Background: rgb(211, 211, 211);
+    --Text-Color: rgb(111, 111, 111);
 }
 
 article, aside, figcaption, figure,
@@ -249,7 +249,7 @@ nav #bottom ul {
     }
 
     nav.top ul {
-        display: flexbox;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -329,7 +329,7 @@ nav #bottom ul {
     }
 
     p #links {
-        display: flexbox;
+        display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
@@ -349,7 +349,7 @@ nav #bottom ul {
 
 @media (min-width: 481px) {
     body {
-        display: flexbox;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -367,7 +367,7 @@ nav #bottom ul {
     }
 
     nav.top ul {
-        display: flexbox;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         background-color: var(--Shadow);
